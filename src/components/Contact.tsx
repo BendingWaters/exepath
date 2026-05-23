@@ -132,7 +132,7 @@ const Contact = () => {
                 </label>
                 <textarea
                   id="message"
-                  rows="4"
+                  rows={4}
                   placeholder="Tell us a bit about your current goals or challenges..."
                   className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 transition-all text-slate-900 resize-none"
                 ></textarea>
