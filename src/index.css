@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@theme {
+  --color-yellow-10: #f4c90f;
+  --color-yellow-20: #fbcd08;
+    --color-yellow-30: #f9c808;
+    --color-yellow-40: #fec808;
+    --color-yellow-50: #fdcb08;
+  --color-gray: #434343;
+  --color-light: #F5F5F5;
+
+}
