@@ -3,21 +3,21 @@ import { Quote } from "lucide-react";
 const testimonials = [
   {
     quote:
-      "Exepath completely transformed how our leadership team operates. Their accountability systems turned our scattered ideas into measurable, consistent execution.",
-    author: "Sarah Jenkins",
-    role: "Founder, TechFlow",
+      "Exepath is a good accountability partner to work with for your business or as an individual, They ensure you stay committed to the goal till it’s achieved, I highly recommend Exepath.",
+    author: "Oyindamola ",
+    role: "Founder T.I.E PROCUREMENTS & LOGISTICS LTD",
   },
   {
     quote:
-      "The business structure clarity session was an eye-opener. We now have a solid operational framework that allows us to scale without the usual growing pains.",
-    author: "David Okafor",
-    role: "Operations Director, CoreSME",
+      "Big appreciation to our project management brand( Exepath) for the amazing work and support towards the growth of my brand, FÈMÍ ÀJỌ́ PLACE. Your creativity, guidance, and dedication have truly helped improve the brand in many ways.hank you for always pushing the vision forward. I appreciate you greatly",
+    author: "Femi",
+    role: "Ceo, FEMI AJO PLACE.",
   },
   {
     quote:
-      "I used to struggle with prioritizing tasks as a freelance creative. Exepath's productivity workflows gave me back my time and drastically improved my output.",
-    author: "Elena Rodriguez",
-    role: "Creative Director",
+      "I had business goals but no systems to execute them consistently. Exepath provided the structure I needed, starting with a clarity session that turned my intentions into actionable plans, followed by coordinated execution that delivered real results.  ",
+    author: "Adegbule Abigail",
+    role: "CEO, Dandy Designs",
   },
 ];
 

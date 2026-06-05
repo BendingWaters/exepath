@@ -1,44 +1,54 @@
-import { ArrowRight } from "lucide-react";
+
 
 const Hero = () => {
   return (
-    <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
-      <div className="absolute top-0 right-0 -z-10 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-96 h-96 bg-yellow-50/10 rounded-full blur-3xl" />
-        <div className="absolute top-40 -left-20 w-72 h-72 bg-yellow-50/10 rounded-full blur-3xl" />
-      </div>
-
-      <div className="container mx-auto px-6 animate-in fade-in slide-in-from-bottom-8 duration-1000">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-50 text-yellow-400 font-semibold text-sm mb-8 shadow-sm">
+    <section className="relative min-h-[90vh] lg:min-h-screen flex items-center justify-center overflow-hidden pt-32 pb-40 lg:pt-48 lg:pb-64">
+      {/* Background Illustration Container */}
+      <div 
+        className="absolute bottom-0 left-0 w-full h-[60%] sm:h-[70%] lg:h-[80%] -z-0 bg-bottom bg-no-repeat bg-cover mix-blend-multiply opacity-50"
+        style={{ 
+          backgroundImage: 'url(/hero-bg1.png)',
+          maskImage: 'linear-gradient(to bottom, transparent, black 30%)',
+          WebkitMaskImage: 'linear-gradient(to bottom, transparent, black 30%)'
+        }}
+      />
+      
+      {/* Content Container */}
+      <div className="container relative z-10 mx-auto px-6 animate-in fade-in slide-in-from-bottom-8 duration-1000">
+        <div className="max-w-5xl mx-auto text-center flex flex-col items-center">
+          
+          {/* Top Tag */}
+          <div className="inline-flex items-center gap-2 text-slate-950 font-medium text-sm sm:text-base mb-8">
             <span className="flex h-2 w-2 relative">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-10 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-yellow-10"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-slate-950 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-slate-950"></span>
             </span>
             Structuring Progress, Delivering Results
           </div>
-          <h1 className="text-5xl lg:text-7xl font-black tracking-tight mb-8 leading-[1.1] text-slate-950">
-            Move from scattered effort to{" "}
-            <span className="text-transparent bg-clip-text bg-linear-to-r from-yellow-10 to-yellow-50">
-              structured progress.
-            </span>
+
+          {/* Heading */}
+          <h1 className="text-5xl sm:text-7xl lg:text-[84px] font-bold tracking-tight mb-8 leading-[1.05] text-black max-w-4xl">
+            Move from scattered effort to <span className="text-yellow-10">structured progress.</span>
           </h1>
-          <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-           Help individuals, startups, and businesses improve productivity, strenghten execution, and drive sustainable growth through structured system, project leadership, and strategic advisory.
+
+          {/* Subheading */}
+          <p className="text-lg sm:text-xl text-gray-900 mb-12 max-w-2xl mx-auto leading-relaxed font-medium">
+            Help individuals, startups, and businesses improve productivity, strenghten execution, and drive sustainable growth through structured system, project leadership, and strategic advisory.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+
+          {/* Buttons */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
             <a
               href="#services"
-              className="w-full sm:w-auto px-8 py-4 bg-yellow-10 text-slate-950 rounded-full font-semibold text-lg hover:bg-yellow-50 transition-all shadow-lg shadow-blue-600/30 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-6 py-4 bg-black text-white rounded-full font-semibold text-lg hover:bg-white hover:text-black transition-all shadow-xl hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center"
             >
-              Explore Our Services <ArrowRight className="w-5 h-5" />
+              Explore Our Services
             </a>
           </div>
         </div>
       </div>
     </section>
   );
-
 };
 
 export default Hero;
