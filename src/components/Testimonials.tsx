@@ -1,23 +1,21 @@
-import { Quote } from "lucide-react";
-
 const testimonials = [
   {
     quote:
-      "Exepath is a good accountability partner to work with for your business or as an individual, They ensure you stay committed to the goal till it’s achieved, I highly recommend Exepath.",
-    author: "Oyindamola ",
-    role: "Founder T.I.E PROCUREMENTS & LOGISTICS LTD",
-  },
-  {
-    quote:
-      "Big appreciation to our project management brand( Exepath) for the amazing work and support towards the growth of my brand, FÈMÍ ÀJỌ́ PLACE. Your creativity, guidance, and dedication have truly helped improve the brand in many ways.hank you for always pushing the vision forward. I appreciate you greatly",
-    author: "Femi",
-    role: "Ceo, FEMI AJO PLACE.",
-  },
-  {
-    quote:
-      "I had business goals but no systems to execute them consistently. Exepath provided the structure I needed, starting with a clarity session that turned my intentions into actionable plans, followed by coordinated execution that delivered real results.  ",
+      "I had business goals but no systems to execute them consistently. Exepath provided the structure I needed — starting with a clarity session that turned my intentions into actionable plans, followed by coordinated execution that delivered real results.",
     author: "Adegbule Abigail",
     role: "CEO, Dandy Designs",
+  },
+  {
+    quote:
+      "Exepath is a good accountability partner to work with for your business or as an individual. They ensure you stay committed to the goal till it's achieved. I highly recommend Exepath.",
+    author: "Oyindamola",
+    role: "Founder, T.I.E Procurements & Logistics Ltd",
+  },
+  {
+    quote:
+      "Big appreciation to our project management brand (Exepath) for the amazing work and support towards the growth of my brand, FÈMÍ ÀJỌ́ PLACE. Your creativity, guidance, and dedication have truly helped improve the brand in many ways. Thank you for always pushing the vision forward.",
+    author: "Femi",
+    role: "CEO, Femi Ajo Place",
   },
 ];
 
@@ -25,90 +23,105 @@ const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      className="relative overflow-hidden border-t border-black/5 bg-light py-20 sm:py-24 lg:py-28"
+      className="relative overflow-hidden bg-[#0D0D0D] py-24 px-6"
     >
-      {/* Decorative background glows */}
-      <div className="pointer-events-none absolute -top-32 left-1/2 h-80 w-80 -translate-x-1/2 rounded-full bg-yellow-40/20 blur-3xl" />
-      <div className="pointer-events-none absolute bottom-0 right-0 h-96 w-96 rounded-full bg-yellow-20/20 blur-3xl" />
+      {/* Ambient glow decorations */}
+      <div className="pointer-events-none absolute -top-40 right-0 h-[28rem] w-[28rem] rounded-full bg-yellow-40/10 blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-40 -left-20 h-[28rem] w-[28rem] rounded-full bg-yellow-40/8 blur-3xl" />
 
-      <div className="relative mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="mx-auto mb-14 max-w-3xl text-center sm:mb-16 lg:mb-20">
-          <span className="mb-4 inline-flex rounded-full border border-yellow-40/40 bg-white px-4 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-gray shadow-sm">
+      {/* Subtle dot texture */}
+      <div className="absolute inset-0 opacity-[0.025] [background-image:radial-gradient(#ffffff_1px,transparent_1px)] [background-size:32px_32px]" />
+
+      <div className="relative z-10 mx-auto w-full max-w-6xl">
+
+        {/* Header */}
+        <div className="mb-16 text-center">
+          <span className="mb-5 inline-flex rounded-full border border-yellow-40/30 bg-yellow-40/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-yellow-40">
             Testimonials
           </span>
 
-          <h2 className="text-4xl font-black tracking-tight text-black sm:text-5xl lg:text-6xl">
-            Client Success
+          <h2 className="mt-4 text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-6xl">
+            What our clients say
           </h2>
 
-          <div className="mx-auto mt-6 h-1.5 w-24 rounded-full bg-yellow-40" />
-
-          <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-gray/90 sm:text-lg">
-            Hear from the professionals and businesses who have transformed
-            their execution with our systems.
+          <p className="mx-auto mt-5 max-w-xl text-base leading-8 text-white/50">
+            Real results from real people who chose structure over scattered effort.
           </p>
         </div>
 
-        {/* Testimonials Grid */}
-        <div className="grid gap-6 md:grid-cols-3 lg:gap-8">
-          {testimonials.map((testimonial, index) => (
+        {/* Featured testimonial */}
+        <article className="group relative mb-5 overflow-hidden rounded-2xl border border-white/5 bg-[#111111] p-8 transition-all duration-500 hover:border-yellow-40/20 sm:p-10 lg:p-12">
+          {/* Top accent line */}
+          <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-yellow-40/50 to-transparent" />
+
+          {/* Hover radial glow */}
+          <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 bg-[radial-gradient(circle_at_top_left,rgba(254,200,8,0.05),transparent_60%)]" />
+
+          {/* Decorative oversized quote mark */}
+          <span
+            aria-hidden="true"
+            className="pointer-events-none absolute -top-4 right-8 select-none font-black leading-none text-[11rem] text-yellow-40/10 transition-colors duration-500 group-hover:text-yellow-40/15"
+          >
+            &ldquo;
+          </span>
+
+          <div className="relative z-10">
+            <p className="mb-8 max-w-3xl text-lg leading-8 text-white/75 sm:text-xl sm:leading-9 lg:text-2xl lg:leading-10">
+              &ldquo;{testimonials[0].quote}&rdquo;
+            </p>
+
+            <div className="flex items-center gap-4">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-yellow-40 text-base font-black text-gray shadow-[0_0_24px_rgba(254,200,8,0.3)]">
+                {testimonials[0].author.charAt(0).toUpperCase()}
+              </div>
+              <div>
+                <p className="font-bold text-white">{testimonials[0].author}</p>
+                <p className="mt-0.5 text-sm text-white/40">{testimonials[0].role}</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        {/* Secondary testimonials */}
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+          {testimonials.slice(1).map((testimonial) => (
             <article
               key={testimonial.author}
-              className="group relative flex h-full flex-col overflow-hidden rounded-4xl border border-black/5 bg-white p-6 shadow-[0_18px_60px_rgba(0,0,0,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_80px_rgba(0,0,0,0.1)] sm:p-8"
+              className="group relative overflow-hidden rounded-2xl border border-white/5 bg-[#1A1A1A] p-7 transition-all duration-500 hover:border-yellow-40/20 sm:p-8"
             >
-              {/* Top accent */}
-              <div className="absolute inset-x-0 top-0 h-1.5 bg-yellow-40" />
+              {/* Top accent line */}
+              <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent transition-all duration-500 group-hover:via-yellow-40/40" />
 
-              {/* Quote icon */}
-              <Quote className="absolute right-6 top-8 h-14 w-14 text-yellow-40/20 transition-colors duration-300 group-hover:text-yellow-40/30" />
+              {/* Hover radial glow */}
+              <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 bg-[radial-gradient(circle_at_top_right,rgba(254,200,8,0.05),transparent_60%)]" />
 
-              {/* Hover glow */}
-              <div className="pointer-events-none absolute -right-20 -top-20 h-52 w-52 rounded-full bg-yellow-40/20 blur-3xl opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+              {/* Decorative quote mark */}
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute -top-2 right-5 select-none font-black leading-none text-[7rem] text-yellow-40/8 transition-colors duration-500 group-hover:text-yellow-40/13"
+              >
+                &ldquo;
+              </span>
 
-              <div className="relative z-10 flex h-full flex-col">
-                {/* Rating */}
-                <div className="mb-7 flex gap-1 text-yellow-40">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <svg
-                      key={star}
-                      className="h-5 w-5 fill-current"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                    </svg>
-                  ))}
-                </div>
-
-                <p className="flex-1 text-base italic leading-8 text-gray/80">
-                  “{testimonial.quote}”
+              <div className="relative z-10">
+                <p className="mb-7 text-sm leading-7 text-white/65 sm:text-base sm:leading-8">
+                  &ldquo;{testimonial.quote}&rdquo;
                 </p>
 
-                {/* Author */}
-                <div className="mt-8 flex items-center gap-4 border-t border-black/5 pt-6">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-yellow-40 text-lg font-black text-gray shadow-[0_12px_30px_rgba(254,200,8,0.25)]">
-                    {testimonial.author.charAt(0)}
+                <div className="flex items-center gap-3 border-t border-white/5 pt-6">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-yellow-40 text-sm font-black text-gray shadow-[0_0_16px_rgba(254,200,8,0.25)]">
+                    {testimonial.author.charAt(0).toUpperCase()}
                   </div>
-
                   <div>
-                    <h5 className="font-black text-gray">
-                      {testimonial.author}
-                    </h5>
-                    <p className="mt-1 text-sm leading-5 text-gray/60">
-                      {testimonial.role}
-                    </p>
+                    <p className="font-bold text-white text-sm">{testimonial.author}</p>
+                    <p className="mt-0.5 text-xs text-white/40">{testimonial.role}</p>
                   </div>
                 </div>
-
-                {/* Card number */}
-                <span className="absolute bottom-7 right-0 text-sm font-black text-gray/20">
-                  0{index + 1}
-                </span>
               </div>
             </article>
           ))}
         </div>
+
       </div>
     </section>
   );

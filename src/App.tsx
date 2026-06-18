@@ -1,4 +1,5 @@
 
+import AboutSection from "./components/AboutSection";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -13,6 +14,7 @@ const App = () => {
     <Hero />
     <ServiceSection />
     <WhyUs />
+    <AboutSection />
     <Testimonials />
     <Contact />
     <Footer />
