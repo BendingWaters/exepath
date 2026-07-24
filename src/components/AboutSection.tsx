@@ -6,7 +6,6 @@ import {
   Rocket,
   Eye,
   MessageCircle,
-  ShieldCheck,
 } from "lucide-react";
 
 const pillars = [
@@ -254,12 +253,9 @@ export default function AboutSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 
             {/* Image placeholder */}
-            <div className="aspect-[3/4] bg-gray-200 rounded-2xl flex items-end justify-center overflow-hidden">
-              {/* IMAGE: founder portrait — replace with <img src="..." alt="Shina Oriyomi" className="w-full h-full object-cover" /> */}
-              <span className="mb-6 text-sm text-gray-400 font-medium select-none">
-                Founder Portrait
-              </span>
-            </div>
+          
+               <img src="/founder.png" alt="Shina Oriyomi" className="w-full h-full object-cover" />
+            
 
             {/* Bio */}
             <div className="flex flex-col justify-center">
