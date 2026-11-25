@@ -1,108 +1,90 @@
 import {
-  Briefcase,
   CheckCircle2,
   ChevronRight,
   Target,
   TrendingUp,
   Users,
   Workflow,
-  Zap,
   ArrowDownToLine,
 } from "lucide-react";
 
 const services = [
   {
     number: "01",
-    label: "Accountability",
     title: "Accountability & Performance Systems",
-    icon: Target,
+    tagline: "Turn goals into consistent action and measurable progress.",
     description:
-      "We help individuals, professionals, founders, and teams stay consistent with goals, responsibilities, and execution through structured accountability and performance support systems.",
+      "We help individuals and teams establish the structure, accountability, and tracking required to stay focused and follow through.",
     offerings: [
-      "Accountability sessions",
-      "Goal tracking and review",
-      "Performance monitoring",
-      "Progress evaluation",
-      "Execution follow-ups",
-      "Consistency support systems",
+      "Goal & Action Planning",
+      "Accountability Systems",
+      "Progress Tracking",
+      "Performance Reviews",
+      "Productivity & Execution Support",
+      "Performance Improvement",
     ],
-    idealFor: [
-      "Professionals",
-      "Entrepreneurs",
-      "Students",
-      "Startup founders",
-      "Teams and organizations",
-    ],
+    idealFor: ["Individuals", "Professionals", "Founders", "Teams"],
   },
   {
     number: "02",
-    label: "Productivity",
-    title: "Productivity & Execution Systems",
-    icon: Workflow,
+    title: "Business Structure, Systems & Processes",
+    tagline: "Build the structure and processes required for effective operations.",
     description:
-      "We help individuals and businesses improve productivity, workflow efficiency, focus, and execution through structured systems and operational clarity.",
+      "We help startups and SMEs create clearer workflows, defined responsibilities, documented processes, and systems that support consistent execution.",
     offerings: [
-      "Productivity planning",
-      "Workflow structuring",
-      "Task and priority management",
-      "Execution systems",
-      "Time management support",
-      "Performance tracking systems",
+      "Business Structure",
+      "Process Mapping",
+      "Workflow Design",
+      "SOP Development & Documentation",
+      "Roles & Responsibilities",
+      "Process Improvement",
+      "Workflow Optimization",
     ],
-    idealFor: [
-      "Professionals",
-      "Remote workers",
-      "Creatives and freelancers",
-      "Founders and teams",
-      "Growing businesses",
-    ],
+    idealFor: ["Startups", "SMEs", "Growing Businesses", "Teams"],
   },
   {
     number: "03",
-    label: "Strategy",
-    title: "Business Structure & Growth Strategy",
-    icon: TrendingUp,
+    title: "Project Management & Delivery",
+    tagline: "Turn project plans into coordinated and controlled delivery.",
     description:
-      "We help startups and SMEs build operational structure, strategic direction, and growth systems for sustainable business development.",
+      "We provide practical project management support to help teams plan, coordinate, monitor, and deliver projects effectively.",
     offerings: [
-      "Business clarity sessions",
-      "Growth strategy planning",
-      "Brand positioning support",
-      "Operational structuring",
-      "Workflow and process systems",
-      "Team coordination systems",
-      "Sustainable growth planning",
+      "Project Planning & Scheduling",
+      "Scope & Deliverables Management",
+      "Resource Coordination",
+      "Stakeholder Coordination",
+      "Risk & Issue Management",
+      "Project Monitoring & Reporting",
+      "Project Closure & Review",
     ],
     idealFor: [
       "Startups",
       "SMEs",
-      "Growing brands",
-      "Early-stage businesses",
-      "Business owners seeking structure",
+      "Organizations",
+      "Project Teams",
+      "Events & Initiatives",
     ],
   },
   {
     number: "04",
-    label: "Advisory",
-    title: "Project Management & Strategic Advisory",
-    icon: Briefcase,
+    title: "Execution Support & Capability Development",
+    tagline: "Build the practical capabilities required for stronger execution.",
     description:
-      "We help businesses plan, coordinate, manage, and execute projects more effectively while providing strategic guidance for operational improvement and growth.",
+      "We help individuals, teams, and organizations develop the skills, practices, and capabilities required to improve execution and performance.",
     offerings: [
-      "Project planning and coordination",
-      "Timeline and workflow management",
-      "Team coordination support",
-      "Project execution tracking",
-      "Strategic business advisory",
-      "Operational improvement guidance",
-      "Performance and execution reviews",
+      "Training & Workshops",
+      "Execution Coaching",
+      "Capability Building",
+      "Performance Development",
+      "Team Development",
+      "Communication Support",
     ],
     idealFor: [
-      "Businesses and organizations",
-      "Startups and SMEs",
-      "Project teams",
-      "Business executives",
-      "Growing operations",
+      "Individuals",
+      "Professionals",
+      "Teams",
+      "Organizations",
+      "Growing Businesses",
     ],
   },
 ];
@@ -233,6 +215,11 @@ const ServiceCard = ({
         {service.title}
       </h3>
 
+      {/* Tagline */}
+      <p className="text-[#111111] font-bold leading-snug mb-3 text-base">
+        {service.tagline}
+      </p>
+
       {/* Description */}
       <p className="text-[#555555] font-medium leading-relaxed mb-8 text-[15px]">
         {service.description}
@@ -244,7 +231,7 @@ const ServiceCard = ({
           <div className="flex items-center gap-2 mb-5">
             <span className="w-1.5 h-1.5 rounded-full bg-yellow-10 shrink-0" />
             <span className="text-[11px] font-bold tracking-[0.15em] uppercase text-black">
-              What We Offer
+              What We Provide
             </span>
           </div>
           <ul className="space-y-3">
@@ -293,13 +280,16 @@ const ServiceSection = () => {
     <section id="services" className="bg-white py-20 lg:py-32">
       <div className="max-w-300 mx-auto px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
+          <span className="inline-block mb-6 rounded-full border border-[#FFD600]/40 bg-[#FFD600]/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-[#7A6500]">
+            Our Solutions
+          </span>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-black uppercase tracking-tighter leading-[1.05] mb-4 md:mb-6">
-            Systems built for<br className="hidden sm:block" />
-            <span className="text-yellow-10"> Performance & Growth</span>
+            Built for<span className="text-yellow-10"> Execution</span>
           </h2>
-          <p className="text-[#555555] text-base sm:text-lg font-medium max-w-xl mx-auto leading-relaxed">
-            Comprehensive systems and strategies designed to elevate your
-            performance and business growth.
+          <p className="text-[#555555] text-base sm:text-lg font-medium max-w-2xl mx-auto leading-relaxed">
+            We provide practical execution and performance solutions that help
+            individuals and businesses move from goals and plans to structured
+            action, effective delivery, and measurable results.
           </p>
         </div>
 
