@@ -7,12 +7,20 @@ import { useGSAP } from "@gsap/react";
 
 const navLinks = [
   {
-    label: "Services",
+    label: "About",
+    href: "#about",
+  },
+  {
+    label: "Solutions",
     href: "#services",
   },
   {
     label: "Why Us",
     href: "#why-us",
+  },
+  {
+    label: "Projects",
+    href: "#projects",
   },
   {
     label: "Testimonials",

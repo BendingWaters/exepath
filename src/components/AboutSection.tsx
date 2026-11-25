@@ -10,9 +10,9 @@ import {
 
 const pillars = [
   { icon: Target,    title: "Accountability & Performance Systems" },
-  { icon: Workflow,  title: "Productivity & Execution Systems" },
-  { icon: TrendingUp, title: "Business Structure & Growth Strategy" },
-  { icon: Briefcase, title: "Project Management & Strategic Advisory" },
+  { icon: Workflow,  title: "Business Structure, Systems & Processes" },
+  { icon: TrendingUp, title: "Project Management & Delivery" },
+  { icon: Briefcase, title: "Execution Support & Capability Development" },
 ];
 
 const philosophies = [
@@ -96,9 +96,7 @@ export default function AboutSection() {
                 Our Mission
               </span>
               <p className="text-gray-800 text-xl font-extrabold leading-snug">
-                To help individuals, startups, and businesses across Africa and beyond build
-                the structure, systems, and execution habits they need to achieve consistent,
-                sustainable results.
+                To help individuals, startups, and businesses across Africa and beyond build the structure, systems, and execution habits they need to achieve consistent and sustainable results.
               </p>
             </div>
 
@@ -239,64 +237,6 @@ export default function AboutSection() {
             Join the Community on WhatsApp
           </a>
 
-        </div>
-      </section>
-
-      {/* ── 6. About the Founder ──────────────────────────────────────── */}
-      <section className="bg-[#F9F9F9] py-24 px-6">
-        <div className="max-w-6xl mx-auto">
-
-          <span className="inline-block mb-10 rounded-full border border-[#FFD600]/40 bg-[#FFD600]/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-[#7A6500]">
-            The Founder
-          </span>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-
-            {/* Image placeholder */}
-          
-               <img src="/founder.png" alt="Shina Oriyomi" className="w-full h-full object-cover" />
-            
-
-            {/* Bio */}
-            <div className="flex flex-col justify-center">
-              <h2 className="text-4xl sm:text-5xl font-black text-gray-900 leading-tight mb-2">
-                Shina Oriyomi
-              </h2>
-
-              <p className="text-[#FFD600] font-bold text-sm uppercase tracking-[0.14em] mb-8">
-                Founder &amp; Lead Strategist, Exepath
-              </p>
-
-              <div className="space-y-4 text-gray-600 leading-relaxed mb-8">
-                <p>
-                  Shina Oriyomi is the founder of Exepath — a Pan-African execution and
-                  performance brand built on a singular conviction: that most people don't
-                  fail from lack of ambition, but from lack of structure.
-                </p>
-                <p>
-                  With a background in project management, productivity systems, and strategic
-                  advisory, Shina has worked with individuals, professionals, founders, and
-                  businesses across Africa to help them build the clarity, systems, and
-                  execution habits that produce real, consistent results.
-                </p>
-                <p>
-                  His approach is direct, structured, and results-focused. He believes every
-                  ambitious person deserves access to the same operational clarity that
-                  high-performing organisations are built on — and he has dedicated Exepath
-                  to making that a reality.
-                </p>
-                <p>
-                  Through Exepath, Shina continues to build, advise, and equip the next
-                  generation of structured African achievers.
-                </p>
-              </div>
-
-              <p className="text-[#FFD600] font-black text-xl italic">
-                Clarity. Structure. Execution.
-              </p>
-            </div>
-
-          </div>
         </div>
       </section>
 
