@@ -11,7 +11,7 @@ const navLinks = [
     href: "#about",
   },
   {
-    label: "Solutions",
+    label: "Our Solutions",
     href: "#services",
   },
   {
